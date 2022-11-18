@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 TextView status = findViewById(R.id.status);
 
                 // change the status
-                status.setText("Ab 'O khelega'");
+                status.setText("o's turn - tap to play");
             } else {
                 // set the image of o
                 img.setImageResource(R.drawable.o_300x300);
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 TextView status = findViewById(R.id.status);
 
                 // change the status
-                status.setText("Ab 'X khelega'- tap kar");
+                status.setText("x's turn - tap to play");
             }
             img.animate().translationYBy(1000f).setDuration(300);
         }
@@ -92,9 +92,9 @@ public class MainActivity extends AppCompatActivity {
                 // game reset function be called
                 gameActive = false;
                 if (gameState[winPosition[0]] == 0) {
-                    winnerStr = "X Jeet Gaya";
+                    winnerStr = "X won the Round";
                 } else {
-                    winnerStr = "O jeet Gaya";
+                    winnerStr = "O won the Round";
                 }
                 // Update the status bar for winner announcement
                 TextView status = findViewById(R.id.status);
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
         // set the status if the match draw
         if (counter == 9 && flag == 0) {
             TextView status = findViewById(R.id.status);
-            status.setText("Koi nahi jeeta");
+            status.setText("Match drawn!!! ");
         }
     }
 

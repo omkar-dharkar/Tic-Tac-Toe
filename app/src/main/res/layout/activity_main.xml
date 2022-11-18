@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="23dp"
-        android:text="Om Ka Tic Tac Toe "
+        android:text="Om's Tic Tac Toe "
         android:textSize="45sp"
         android:textStyle="bold"
         app:fontFamily="cursive"
@@ -29,8 +29,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="419dp"
+        android:layout_height="459dp"
         android:contentDescription="Start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -172,7 +172,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15sp"
-        android:text="Status"
+        android:text="Who's turn?"
         android:textSize="28sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
